@@ -122,3 +122,113 @@ let numeroB = parseInt(prompt("Ingresa el segundo numero:"))
 
 let numeroTotal = suma(numeroA, numeroB)
 mensaje(numeroTotal /* numero */ 
+
+// Clase 5  -   Objetos - Ejemplos:
+
+/*
+empleado: 
+let nombre = "Homero";
+let edad = 39;
+let calle = "Av. siempreviva 742";
+
+
+const personal = { nombre: "Homero", edad: 39, calle: "Av siempreviva 742" }
+ 
+Se lo llama despues poniendo el nuevo nombre . y la palabra. ejemplo:
+
+if(compra1 == "Remera"){
+    calculoEmpleados(cantidad1, personal.nombre , personal.edad)}
+
+O sino entre [] ejemplo:
+
+if(compra1 == "Remera"){
+    calculoEmpleados(cantidad1, personal["nombre"] , personal["edad"])}
+
+
+    Constructores: (para agregar nuevo "personal")
+ejemplo:
+
+function Persona(nombre, edad, calle)
+  this.nombre = nombre;
+  this.edad = edad;
+  this.calle = calle; 
+
+const persona1 = new persona ("Homero", 39, "Av. Siempreviva 742")
+const persona2 = new persona ("Marge", 36, "Av. Siempreviva 742")
+
+//Metodos en objetos, por cada cadena de caracteres hay porpiedades disponibles en ella. Ejemplos:
+
+let cadena = "HOLA CODER"
+
+console.log(cadena.length) (te dice cuantos caracteres tiene "cadena")
+console.log(cadena.toLowerCase) (pasa el texto a minuscula)
+console.log(cadena.toUpperCase) (pasa el texto a mayuscula)
+
+ejemplo : 
+
+let usuario = "CaRamelOs"
+
+let basededatoss = "Caramelos"
+
+usuario == basededatos (FAIL)
+
+usuario.toLowerCase() == basededatos.toLowerCase() (TRUE)
+
+//Clase 6: ARRAYS
+
+*/
+//            0    1     2    3       4
+
+/* let nombre = prompt("Ingrese su nombre: ")
+
+let lista = [5, "Coder", 80, true, "House"]
+
+
+// Join, te da todos los elementos pero separados por el valor que demos
+
+console.log (lista.join ("* ") )
+
+5* coder* 80* true* hause
+
+
+
+// splice para borrar elementos    elemento, cuantos borrar
+lista.splice(4, 1)
+lista.splice(3, 3)
+
+// push & unshift para agregar elementos
+lista.push(nombre)
+lista.unshift("Nuevo Elemento")
+
+for(let i = 0; i < lista.length; i ++){
+       console.log(lista[i])
+
+
+
+// Metodo CONCAT, combinar dos arrays
+const perros = ["Ciclon", "perri"]
+const gatos = ["Mishi", "gato"]
+const mascotas = perros.concat(gatos)
+
+console.log(mascotas)
+
+- ["Ciclon", "perri", "Mishi", "gato"]
+
+// SLICE, devuelve una copia de un array dentro de un nuevo array, empezando de inicio a fin sin eliminar
+const nombres = ["Rita" ,"Brian", "Jorge", "Aru", "Roxi"]
+
+const masculinios = nombres.slice (1, 3);
+
+- masculinos contiene ["Brian", "Jorge"]
+
+
+
+
+} */
+
+
+ 
+
+
+
+

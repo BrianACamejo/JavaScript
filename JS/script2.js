@@ -1,48 +1,62 @@
-let nombreProductoA = "Remera"
-let precioProductoA = 2500
-let stockProductoA =20
+let productoA = { nombre: "Remera", precio: 2500 , stock: 20 }
 
-let nombreProductoB = "Pantalon"
-let precioProductoB = 3900
-let stockProductoB = 20
+function Producto(nombre, precio, stock){
+    this.nombre = nombre;
+    this.precio = precio;
+    this.stock = stock;
+}
+
+const productoB = new Producto("Pantalon", 4000, 20)
+const productoC = new Producto("Zapatillas", 25000, 20)
+const productoD = new Producto("Medias", 1000, 20)
+const productoE = new Producto("Gorra", 2300, 20)
 
 
-let nombreProductoC = "Zapatillas"
-let precioProductoC = 25000
-let stockProductoC  = 20
+let listaProductos = [ productoA, productoB, productoC, productoD, productoE]
 
-let cantidadCompras = prompt("Ingrese la catidad de productos distintos que quiere comprar: \n-Remera\n-Pantalon\n-Zapatillas ")
+let nombresProductos = [ ]
+
+function listarProductos(){
+    for(const producto of listaProductos){
+    nombresProductos.push(producto.nombre)}
+}
+/* let productoB = { nombre: "Pantalon" , precio: 4000, stock: 20 } 
+ */
+/* let productoC = { nombre: "Zapatillas", precio: 25000 , stock: 20} */
+
+let cantidadCompras = prompt("Ingrese la catidad de productos distintos que quiere comprar: \n " + listaProductos.join("\n "))
 let precioTotal = 0;
 
 function calculoPrecio(cantidad, precio){
     precioTotal += cantidad * precio}
 
-function calculoStock(cantidad, stock, precio){
+function calculoStock(cantidad, stock, precio){ 
         if(stock >= cantidad){
             calculoPrecio(cantidad, precio)
         alert("El precio total es de: $" + (cantidad * precio))
         }
         else{
-            alert("No disponemos esa cantidad de stock. Nuestro stock actual es de: " + stockProductoA + " unidades")
+            alert("No disponemos esa cantidad de stock. Nuestro stock actual es de: " + productoA.stock + " unidades")
         }
     }
 
 
+
 for(let i = 0; i < cantidadCompras; i++ ){
 
-let compra1 = prompt("Ingrese el nombre del producto que quiere comprar: \n-Remera\n-Pantalon\n-Zapatillas ")
+let compra1 = prompt("Ingrese el nombre del producto que quiere comprar: \n " + listaProductos.join("\n ")).toLocaleLowerCase()
 let cantidad1 = prompt("Ingrese la cantidad del producto que quiere comprar: ")
 
 if(compra1 == "Remera"){
-    calculoStock(cantidad1, stockProductoA, precioProductoA)}
+    calculoStock(cantidad1, productoA.stock, productoA.precio)}
    
 
 if(compra1 == "Pantalon"){
-    calculoStock(cantidad1, stockProductoB, precioProductoB)}
+    calculoStock(cantidad1, productoB.stock, productoB.precio)}
    
 
 if(compra1 == "Zapatillas"){
-    calculoStock(cantidad1, stockProductoC, precioProductoC)} 
+    calculoStock(cantidad1, productoC.stock, productoC.precio)} 
 }
 
 switch(true){
@@ -50,15 +64,15 @@ switch(true){
         precioTotal = precioTotal * 0.95
        alert("Recibiste un descuento del 5% por tu compra")
     break;
-    case precioTotal < 10000:
-        precioTotal = precioTotal * 0.90
-        alert("Recibiste un descuento del 10% por tu compra")
+    case precioTotal < 20000:
+        precioTotal = precioTotal * 0.85
+        alert("Recibiste un descuento del 15% por tu compra")
         break;
-    case precioTotal < 30000:
-        precioTotal = precioTotal * 0.80
-        alert("Recibiste un descuento del 20% por tu compra")
+    case precioTotal < 50000:
+        precioTotal = precioTotal * 0.75
+        alert("Recibiste un descuento del 25% por tu compra")
         break;
-    case precioTotal > 50000: 
+    case precioTotal > 100000: 
         precioTotal = precioTotal * 0.60
         alert("Recibiste un descuento del 40% por tu compra")
         break;
@@ -74,3 +88,6 @@ function sumaIva(precio){
 
 let precioTotalConImpuestos = sumaIva(precioTotal)
 alert("El total con impuestos es de: $" + precioTotalConImpuestos)
+
+
+ 
