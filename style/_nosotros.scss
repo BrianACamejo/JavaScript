@@ -1,0 +1,48 @@
+
+.h1Nos{
+    display: grid;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.h3Nos{
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    justify-content: center;
+}
+.h4Nos{
+    display: grid;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.form {
+    padding: 0px 20px 30px 20px;}
+
+@media(min-width:375px){
+   
+.form{
+    padding-top: 30px;
+}
+.h1Nos{
+    padding-top: 40px;
+}
+.h3Nos{
+    font-size: 15px;
+    padding-left: 10px;
+}
+.h4Nos{
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+      
+}
+@media(min-width:768px){
+.h3Nos{ font-size: 20px;}
+.h4Nos{ font-size: 20px;}
+}
+@media(min-width:1024px){
+.h3Nos{ font-size: 23px;}
+.h4Nos{ font-size: 23px;}
+}

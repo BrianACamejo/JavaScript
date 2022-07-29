@@ -223,6 +223,32 @@ const masculinios = nombres.slice (1, 3);
 
 
 
+// CLASE 7 : Funciones de orden superior 
+
+function porCadaUno(arr, fn){
+          for (const elemento of array){
+          fn(ellemento)
+          }
+}
+ 
+
+function suma (a, b){
+    a+b
+}
+
+const numeros = (1, 2, 3, 4, 5, 6)
+
+porCadaUno(numeros, suma)
+
+function porCadaUno(numeros, console.log)
+         for (const elenmento of numeros){
+        console.log(elemento)
+         }
+
+
+
+
+
 
 } */
 

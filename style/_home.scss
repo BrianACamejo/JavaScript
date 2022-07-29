@@ -1,0 +1,139 @@
+.h2Ind{
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sectionInd{
+    display: grid;
+    justify-content: center;
+    
+}
+.contenedorLogos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "adidasL nikeL pumaL";
+    gap: 0px 70px;
+}
+ 
+.adidasL{ grid-area: adidasL;}
+.nikeL{ grid-area: nikeL;}
+.pumaL{ grid-area: pumaL;}
+
+
+.contenedorFotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "adidasF nikeF pumaF";
+   gap: 0px 70px;
+}
+.adidasF{grid-area: adidasF;}
+.nikeF{grid-area: nikeF;}
+.pumaF{grid-area: pumaF;}
+
+.carruselesInd{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 40px;
+    grid-template-areas: "car1 car2 car3 car4";
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 70px;
+}
+
+.car1{ grid-area: car1;}
+.car2{ grid-area: car2;}
+.car3{ grid-area: car3;}
+.car4{ grid-area: car4;}
+
+.h5Car1234{ color: white; background-color: rgba(147, 147, 147, 0.592); }
+.pCar1234{ color: white; background-color: rgba(147, 147, 147, 0.592); }
+
+
+
+.suscribite2{
+    background-color: #BEFFCB;
+    color: black;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    padding: 1px;
+    margin: 0px;
+    
+}
+
+@media(min-width:375px){
+  
+    .sectionInd{ 
+    gap: 0px 10px;
+  }
+   .adidasF{ width: 70px;}
+   .nikeF{ width: 70px;}
+   .pumaF{ width: 70px;}
+  
+   .adidasL{width: 70px;}
+   .nikeL{width: 70px;}
+   .pumaL{width: 70px;}
+
+   .carruselesInd{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    gap: 40px 40px;
+    grid-template-areas: 
+    "car1 car2"
+    "car3 car4";
+    
+}
+.car1{ grid-area: car1;}
+.car2{ grid-area: car2;}
+.car3{ grid-area: car3;}
+.car4{ grid-area: car4;}
+
+.suscribite2{
+    font-size: 15px;
+}
+  
+}
+
+@media(min-width:768px){
+   
+    .adidasF{ width: 140px;}
+    .nikeF{ width: 140px;}
+    .pumaF{ width: 140px;}
+   
+    .adidasL{width: 140px;}
+    .nikeL{width: 140px;}
+    .pumaL{width: 140px;}
+ 
+}
+
+@media(min-width:1024px){
+    
+.carruselesInd{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 40px;
+    grid-template-areas: "car1 car2 car3 car4";
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 70px;
+}
+
+.car1{ grid-area: car1;}
+.car2{ grid-area: car2;}
+.car3{ grid-area: car3;}
+.car4{ grid-area: car4;}
+
+}

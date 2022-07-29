@@ -1,0 +1,678 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Oswald:wght@300&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=DM+Serif+Display&family=Oswald:wght@300&family=Poppins:wght@200;300&family=Source+Sans+Pro:wght@600&family=Tiro+Tamil&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  display: grid;
+  justify-content: center;
+}
+
+header {
+  padding: 30px 50px 0px 20px;
+  background-color: #CDCDCD;
+  display: grid;
+  justify-content: center;
+}
+header nav {
+  display: inline-block;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li {
+  list-style-type: none;
+  padding: 5px 0px 10px 30px;
+}
+header nav ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.suscribite {
+  background-color: #BEFFCB;
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
+  margin: 0px;
+}
+
+footer {
+  background-color: #CDCDCD;
+  padding: 30px 50px 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "p1" "p2";
+  justify-items: center;
+}
+footer .p1 {
+  grid-area: p1;
+}
+footer .p1 .p2 {
+  grid-area: p2;
+}
+
+@media (min-width: 375px) {
+  #logo {
+    padding-bottom: 20px;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  #logo {
+    padding-bottom: 20px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+}
+.h2Ind {
+  display: grid;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sectionInd {
+  display: grid;
+  justify-content: center;
+}
+
+.contenedorLogos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "adidasL nikeL pumaL";
+  gap: 0px 70px;
+}
+
+.adidasL {
+  grid-area: adidasL;
+}
+
+.nikeL {
+  grid-area: nikeL;
+}
+
+.pumaL {
+  grid-area: pumaL;
+}
+
+.contenedorFotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "adidasF nikeF pumaF";
+  gap: 0px 70px;
+}
+
+.adidasF {
+  grid-area: adidasF;
+}
+
+.nikeF {
+  grid-area: nikeF;
+}
+
+.pumaF {
+  grid-area: pumaF;
+}
+
+.carruselesInd {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 40px;
+  grid-template-areas: "car1 car2 car3 car4";
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 70px;
+}
+
+.car1 {
+  grid-area: car1;
+}
+
+.car2 {
+  grid-area: car2;
+}
+
+.car3 {
+  grid-area: car3;
+}
+
+.car4 {
+  grid-area: car4;
+}
+
+.h5Car1234 {
+  color: white;
+  background-color: rgba(147, 147, 147, 0.592);
+}
+
+.pCar1234 {
+  color: white;
+  background-color: rgba(147, 147, 147, 0.592);
+}
+
+.suscribite2 {
+  background-color: #BEFFCB;
+  color: black;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
+  margin: 0px;
+}
+
+@media (min-width: 375px) {
+  .sectionInd {
+    gap: 0px 10px;
+  }
+  .adidasF {
+    width: 70px;
+  }
+  .nikeF {
+    width: 70px;
+  }
+  .pumaF {
+    width: 70px;
+  }
+  .adidasL {
+    width: 70px;
+  }
+  .nikeL {
+    width: 70px;
+  }
+  .pumaL {
+    width: 70px;
+  }
+  .carruselesInd {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 40px;
+    grid-template-areas: "car1 car2" "car3 car4";
+  }
+  .car1 {
+    grid-area: car1;
+  }
+  .car2 {
+    grid-area: car2;
+  }
+  .car3 {
+    grid-area: car3;
+  }
+  .car4 {
+    grid-area: car4;
+  }
+  .suscribite2 {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .adidasF {
+    width: 140px;
+  }
+  .nikeF {
+    width: 140px;
+  }
+  .pumaF {
+    width: 140px;
+  }
+  .adidasL {
+    width: 140px;
+  }
+  .nikeL {
+    width: 140px;
+  }
+  .pumaL {
+    width: 140px;
+  }
+}
+@media (min-width: 1024px) {
+  .carruselesInd {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 40px;
+    grid-template-areas: "car1 car2 car3 car4";
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 70px;
+  }
+  .car1 {
+    grid-area: car1;
+  }
+  .car2 {
+    grid-area: car2;
+  }
+  .car3 {
+    grid-area: car3;
+  }
+  .car4 {
+    grid-area: car4;
+  }
+}
+.h1Nos {
+  display: grid;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.h3Nos {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  justify-content: center;
+}
+
+.h4Nos {
+  display: grid;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.form {
+  padding: 0px 20px 30px 20px;
+}
+
+@media (min-width: 375px) {
+  .form {
+    padding-top: 30px;
+  }
+  .h1Nos {
+    padding-top: 40px;
+  }
+  .h3Nos {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .h4Nos {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .h3Nos {
+    font-size: 20px;
+  }
+  .h4Nos {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .h3Nos {
+    font-size: 23px;
+  }
+  .h4Nos {
+    font-size: 23px;
+  }
+}
+.suscribiteH {
+  background-color: rgb(103, 103, 255);
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
+  margin: 0px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.carruselesHom {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 40px;
+  grid-template-areas: "car1 car2 car3 car4";
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.car1 {
+  grid-area: car1;
+}
+
+.car2 {
+  grid-area: car2;
+}
+
+.car3 {
+  grid-area: car3;
+}
+
+.car4 {
+  grid-area: car4;
+}
+
+.separacion {
+  background-color: #BEFFCB;
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
+  margin: 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.foot {
+  margin-top: 30px;
+}
+
+@media (min-width: 375px) {
+  .carruselesHom {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 40px;
+    grid-template-areas: "car1 car2" "car3 car4";
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .car1 {
+    grid-area: car1;
+  }
+  .car2 {
+    grid-area: car2;
+  }
+  .car3 {
+    grid-area: car3;
+  }
+  .car4 {
+    grid-area: car4;
+  }
+}
+@media (min-width: 1024px) {
+  .carruselesHom {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 40px;
+    grid-template-areas: "car1 car2 car3 car4";
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .car1 {
+    grid-area: car1;
+  }
+  .car2 {
+    grid-area: car2;
+  }
+  .car3 {
+    grid-area: car3;
+  }
+  .car4 {
+    grid-area: car4;
+  }
+}
+.suscribiteM {
+  background-color: rgb(103, 103, 255);
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
+  margin: 0px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.carruselesMuj {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 40px;
+  grid-template-areas: "car1 car2 car3 car4";
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.car1 {
+  grid-area: car1;
+}
+
+.car2 {
+  grid-area: car2;
+}
+
+.car3 {
+  grid-area: car3;
+}
+
+.car4 {
+  grid-area: car4;
+}
+
+.separacion {
+  background-color: #BEFFCB;
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
+  margin: 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.foot {
+  margin-top: 30px;
+}
+
+@media (min-width: 375px) {
+  .carruselesMuj {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 40px;
+    grid-template-areas: "car1 car2" "car3 car4";
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .car1 {
+    grid-area: car1;
+  }
+  .car2 {
+    grid-area: car2;
+  }
+  .car3 {
+    grid-area: car3;
+  }
+  .car4 {
+    grid-area: car4;
+  }
+}
+@media (min-width: 1024px) {
+  .carruselesMuj {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 40px;
+    grid-template-areas: "car1 car2 car3 car4";
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .car1 {
+    grid-area: car1;
+  }
+  .car2 {
+    grid-area: car2;
+  }
+  .car3 {
+    grid-area: car3;
+  }
+  .car4 {
+    grid-area: car4;
+  }
+}
+.suscribiteN {
+  background-color: rgb(103, 103, 255);
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
+  margin: 0px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.carruselesNi {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 40px;
+  grid-template-areas: "car1 car2 car3 car4";
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.car1 {
+  grid-area: car1;
+}
+
+.car2 {
+  grid-area: car2;
+}
+
+.car3 {
+  grid-area: car3;
+}
+
+.car4 {
+  grid-area: car4;
+}
+
+.separacion {
+  background-color: #BEFFCB;
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  padding: 1px;
+  margin: 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.foot {
+  margin-top: 30px;
+}
+
+@media (min-width: 375px) {
+  .carruselesNi {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 40px;
+    grid-template-areas: "car1 car2" "car3 car4";
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .car1 {
+    grid-area: car1;
+  }
+  .car2 {
+    grid-area: car2;
+  }
+  .car3 {
+    grid-area: car3;
+  }
+  .car4 {
+    grid-area: car4;
+  }
+}
+@media (min-width: 1024px) {
+  .carruselesNi {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 40px;
+    grid-template-areas: "car1 car2 car3 car4";
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .car1 {
+    grid-area: car1;
+  }
+  .car2 {
+    grid-area: car2;
+  }
+  .car3 {
+    grid-area: car3;
+  }
+  .car4 {
+    grid-area: car4;
+  }
+}/*# sourceMappingURL=style.css.map */

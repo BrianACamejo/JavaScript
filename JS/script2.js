@@ -5,11 +5,9 @@ function Producto(nombre, precio, stock){
     this.stock = stock
     
     this.sumaIva = function(){
-        return this.precio * 1.21 
-    }
-    this.sumarStock = function (cantidad){ this.stock += cantidad}  
+        return this.precio * 1.21 }
+        this.sumarStock = function (cantidad){ this.stock += cantidad}  
 }
-
 
 const productoA = new Producto("Remera", 2500, 20)
 const productoB = new Producto("Pantalon", 4000, 20)
@@ -36,13 +34,13 @@ function calculoStock(cantidad, producto){
         }
     }
 
-let nombresProductos = []
-function listarProductos() {
+let nombresProductos = listaProductos.map((producto) => producto.nombre)
+/* function listarProductos() {
     for(const producto of listaProductos){
         nombresProductos.push (producto.nombre)
     }
 }
-listarProductos()
+listarProductos() */
 
 
 
@@ -74,28 +72,23 @@ else {
 switch(true){
     case precioTotal < 5000 || precioTotal > 1000000:
         precioTotal = precioTotal * 0.95
-       alert("Recibiste un descuento del 5% por tu compra")
+       alert("Recibiste un descuento del 5% por tu compra, el total con impuestos es de: $"+ precioTotal)
     break;
     case precioTotal < 20000:
         precioTotal = precioTotal * 0.85
-        alert("Recibiste un descuento del 15% por tu compra")
+        alert("Recibiste un descuento del 15% por tu compra, el total con impuestos es de: $"+ precioTotal)
         break;
     case precioTotal < 50000:
         precioTotal = precioTotal * 0.75
-        alert("Recibiste un descuento del 25% por tu compra")
+        alert("Recibiste un descuento del 25% por tu compra, el total con impuestos es de: $"+ precioTotal)
         break;
     case precioTotal > 100000: 
         precioTotal = precioTotal * 0.60
-        alert("Recibiste un descuento del 40% por tu compra")
+        alert("Recibiste un descuento del 40% por tu compra, el total con impuestos es de: $"+ precioTotal)
         break;
     default:
         console.log(precioTotal)
         alert("No ingresaste un precio en numeros");
         break;
 }  
-
-let precioTotalConImpuestos = sumaIva(precioTotal)
-alert("El total con impuestos es de: $" + precioTotalConImpuestos)
-
-
  
